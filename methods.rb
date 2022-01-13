@@ -61,22 +61,23 @@ end
 def greet
   puts "What is your name"
   name = gets.chomp
-  puts "#{name}, it's lovely to meet you!"
+  "#{name}, it's lovely to meet you!"
 end
 
 def weather
   conditions = ["Raining", "Overcast", "Sunny"]
-  puts conditions[rand(3)]
+  conditions[rand(3)]
 end
 
 def time
-  puts Time.now.strftime("%H:%M:%S")
+  
+  Time.now.strftime("%H:%M:%S")
+
 end
 
 def current_outlook
-  puts time
-  puts weather
+  "#{ time } #{ weather }"
 end
 
-current_outlook
+p current_outlook
 
